@@ -1,0 +1,13 @@
+---
+version: "2"
+
+services:
+  our-app:
+    build: .
+    image: ffang:micro_part1
+    volumes:
+      - .:/code
+    ports:
+      - "9000:9090"
+      
+
